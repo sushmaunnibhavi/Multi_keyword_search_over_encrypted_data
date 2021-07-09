@@ -85,7 +85,7 @@
                     String query = "insert into " + filename + username + fsize + filePath + appkey+indexval;
                     out.print(query);
                     Class.forName("com.mysql.jdbc.Driver");
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/enablingkeyword_search", "fyp", "Mummy2512&");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/enablingkeyword_search", "fyp", "");
                     String sql = "insert into fileupload (uname,filename,filesize,filePath,appkey,indexval)values (?,?,?,?,?,?)";
                     PreparedStatement pst = con.prepareStatement(sql);
                    
