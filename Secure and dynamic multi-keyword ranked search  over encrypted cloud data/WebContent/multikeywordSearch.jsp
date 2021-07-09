@@ -66,7 +66,7 @@
                                         <%
                                         try {
                                            Class.forName("com.mysql.jdbc.Driver");
-Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/enablingkeyword_search","fyp", "Mummy2512&");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/enablingkeyword_search","fyp", "");
 
                                             Statement st = con.createStatement();
 
