@@ -9,7 +9,7 @@ String loginoption=request.getParameter("loginoption");
 if(loginoption.equals("volvo"))
 {
 Class.forName("com.mysql.jdbc.Driver");
-Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/enablingkeyword_search","fyp", "Mummy2512&");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/enablingkeyword_search","fyp", "");
 Statement st = con.createStatement();
 ResultSet rs;
 rs= st.executeQuery("select * from registration where username='" + userid + "' and password='" + pwd + "'");
@@ -25,7 +25,7 @@ response.sendRedirect("login.jsp?msg=invalid login!..");
 else
 {
    Class.forName("com.mysql.jdbc.Driver");
-Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/enablingkeyword_search","fyp", "Mummy2512&");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/enablingkeyword_search","fyp", "");
 Statement st = con.createStatement();
 ResultSet rs;
 rs= st.executeQuery("select * from userregistration where username='" + userid + "' and password='" + pwd + "'");
